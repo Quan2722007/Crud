@@ -229,8 +229,8 @@ function Crud() {
                                     ))}
                                 </tbody>
                             </table>
-                            <div ref={observerTarget} style={{ textAlign: "center" }}>
-                                {loading && page > 1 && <p>Đang tải...</p>}
+                            <div ref={observerTarget} style={{ textAlign: "center", margin: "10px 0" }}>
+                                {(loading && page > 1) && <p>Đang tải thêm...</p>}
                             </div>
                         </div>
                     )
